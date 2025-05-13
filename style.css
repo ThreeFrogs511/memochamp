@@ -1,0 +1,298 @@
+
+
+/* DOM */
+body {
+    background-color: rgb(245, 237, 237);
+    font-family: 'inter', sans-serif;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:hover {
+    color: rgba(255, 255, 255, 0.81);
+}
+
+header {
+    background-color: rgb(11, 11, 109);
+    color: white;
+    height: 10dvh;
+    padding: 0px 0px 10px 10px;
+   
+    
+}
+
+/* settings */
+.settingsIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 8%;
+    cursor: pointer;
+    
+}
+
+.settingsIcon:hover {
+   animation: rotationGear 3s infinite;
+}
+
+@keyframes rotationGear {
+    0% { transform: rotate(0deg)}
+    50% {transform: rotate(360deg);}
+    100% {transform: rotate(0deg)}
+}
+
+#settingsMenu {
+    transition: transform 0.5s ease;
+    background-color: rgb(11, 11, 109);
+    height: 100dvh;
+    width: 100dvw;
+    color: white;
+   overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#settingsMenu h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+ 
+   
+}
+
+
+.settingsHidden {
+    position: absolute;
+    transform: translate3d(100vw, 0, 0);
+    
+    
+    
+}
+
+.settingsOpened {
+    position: absolute;
+    transform: translate3d(0vw, 0, 0);
+    
+}
+
+.GridScoreRubrique {
+    background-color: rgb(5, 5, 62);
+    padding: 10px 10px 10px 10px;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 95%;
+    gap: 50px;
+    
+}
+
+
+.timerRubrique {
+    gap: 20px;
+    padding: 0px 20px 5px 20px;
+    width: 95%;
+    margin-bottom: 30px;
+}
+.containerSite {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto, 1fr, auto;
+    grid-template-columns: minmax(0,1fr);
+    padding: none;
+    border: none;
+}
+#timer {
+    color: black;
+    width: 45%;
+    margin-left: 10px;
+}
+
+.timerInputError {
+    box-shadow: 1px 1px 10px 5px red;
+}
+datalist {
+    display: flex;
+    flex-direction: row;
+    gap: 96px;
+    position: relative;
+    left: 4px;
+}
+
+/* choix du début */
+.jeu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+.intro h2 {
+    font-size: xx-large;
+}
+
+
+.intro span {
+    border: 1px solid rgb(11, 11, 109);
+    padding: 10px;
+    background-color: rgb(11, 11, 109) ;
+    color: white;
+}
+
+.intro span:hover {
+    background-color: rgb(5, 5, 62);
+    border: 1px solid rgb(5, 5, 62);
+}
+
+.choixDebut {
+    width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+gap: 20px;
+}
+
+
+.facile, .intermediaire, .expert {
+    cursor: pointer;
+}
+
+
+/* affichage du jeu après le choix */
+
+#carreJeu {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+#jouerOuAnnuler {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+#jouerOuAnnuler p {
+    border: 1px solid rgb(11, 11, 109);
+    padding: 10px;
+    background-color: rgb(11, 11, 109) ;
+    color: white;
+    cursor: pointer;
+}
+
+#jouerOuAnnuler p:hover {
+    background-color: rgb(5, 5, 62);
+    border: 1px solid rgb(5, 5, 62);
+}
+.jeuFacile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+
+}
+
+.jeuIntermediaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
+    width: 50%;
+    width: 400px;
+    height: 400px;
+    
+    margin: auto;
+}
+
+.jeuExpert{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 colonnes */
+     /* espace entre les cubes */
+    width: 400px; /* largeur totale */
+    height: 400px; /* hauteur totale pour garder des carrés */
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+
+}
+
+.carre {
+    border: 1px solid black;
+    padding: 1vh;
+    
+}
+
+.carreBleu {
+    background-color: rgb(11, 11, 109);
+}
+
+.carreVert {
+    background-color: rgb(12, 186, 12);
+}
+
+.carreRouge {
+    background-color: red;
+}
+
+.barreTempsMemo {
+    height: 3dvh;
+    width: 50dvw;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#progression {
+    height: 3dvh;
+    width: 50dvw;
+    background-color: rgb(11, 11, 109);
+    animation: tempsDiminue 5s 2 linear;
+}
+
+@keyframes tempsDiminue {
+    0% {width: 50dvw}
+    100% {width: 0dvh}
+}
+
+
+.timeUp {
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#over {
+    margin-top: 20px;
+    border: 1px solid rgb(11, 11, 109);
+    padding: 10px;
+    background-color: rgb(11, 11, 109) ;
+    color: white;
+    cursor: pointer;
+   
+}
+
+#over:hover {
+    background-color: rgb(5, 5, 62);
+    border: 1px solid rgb(5, 5, 62);
+   
+}
