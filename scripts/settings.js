@@ -27,8 +27,8 @@ function displayScores() {
 //displaying the set timer
 let timerChoisi = document.querySelector(".timerChoisi");
 let slider = document.getElementById("timer");
-slider.value=JSON.parse(window.localStorage.getItem("timer"))??=5;
-timerChoisi.innerHTML = `You will have <span>${JSON.parse(window.localStorage.getItem("timer"))}</span> seconds.`;
+slider.value=JSON.parse(window.localStorage.getItem("timer")) !== null ? JSON.parse(window.localStorage.getItem("timer")) : "5";
+timerChoisi.innerHTML = `You will have <span>${slider.value}</span> seconds.`;
 // changing the timer
 document.getElementById("timer").addEventListener("input", () => {
     let timerValue = document.getElementById("timer").value;
