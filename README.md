@@ -1,52 +1,42 @@
 Memochamp
 https://threefrogs511.github.io/memochamp/
+A simple memory challenge built with JavaScript
 
-Memochamp is a browser-based game made with JavaScript. The goal is simple but challenging: memorize as many blue squares as possible within a limited time.
+🎮 Game Concept
 
-How to Play
+Memochamp is a browser-based game where your goal is to memorize as many blue squares as possible within a limited time.
+It’s quick, fun, and tests your memory skills under pressure.
 
-When the game starts, blue squares will appear on the screen.
+🕹️ How to Play
 
-Your task is to remember their positions.
+When the game starts, a grid of squares appears.
+Some of them briefly turn blue — remember their positions.
+Once they disappear, select the correct squares.
+Score points for each correct answer before the timer runs out.
 
-After a short display, you must click (or otherwise identify) the squares that were blue.
+✨ Features
 
-You aim to correctly identify as many blue squares as possible before the timer runs out.
+Time-limited rounds to increase challenge.
+Score tracking for each play session.
+Lightweight and runs directly in your browser.
 
-Features
+🛠️ Built With
 
-Adjustable timer: you can pick how many seconds you want to play.
+JavaScript for game logic and interactivity
+HTML and CSS for layout and design
+No external frameworks — just vanilla code
 
-Score tracking: the game records how well you did during each session.
+🚧 Work in Progress
 
-Technical Details
+This project is still evolving. Planned improvements include:
+Visual feedback for correct and wrong answers
+Difficulty scaling with more complex grids
+Responsive design for mobile screens
+High score saving (database)
 
-Built using vanilla JavaScript, HTML, and CSS.
+📂 Getting Started
+Play instantly, no installation required
 
-Runs directly in the browser; no server side required.
+📜 License
 
-Uses basic DOM manipulation and event handling.
-
-Status
-
-Work in progress. Some features planned or under development:
-
-Improved visual feedback for correct / incorrect picks.
-
-More complex levels or difficulty scaling.
-
-Better responsiveness for different screen sizes.
-
-Persistent high score storage (e.g. local storage or backend).
-
-Purpose
-
-This project is intended as both a practice in front-end development and a fun, simple memory-challenge game. Feedback, suggestions, or contributions are welcome.
-
-Usage
-
-Clone or download the repository, then open index.html in your browser. No build steps or dependencies required.
-
-License
-
-(Add license information here, if applicable)
+(Add license information here if needed)
